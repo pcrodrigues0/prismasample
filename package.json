@@ -1,0 +1,24 @@
+{
+  "name": "prismasample",
+  "version": "1.0.0",
+  "description": "A sample of api using the prisma ORM",
+  "main": "index.js",
+  "author": "Paulo Rodrigues <pcqrodrigues@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "migration:save": "prisma migrate save --experimental",
+    "migration:up": "prisma migrate up --experimental",
+    "prisma:studio": "npx prisma studio --experimental",
+    "prisma:introspect": "npx prisma introspect",
+    "start:dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "@prisma/cli": "^2.5.0",
+    "@prisma/client": "^2.5.0",
+    "@types/node": "^14.6.0",
+    "D": "^1.0.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
